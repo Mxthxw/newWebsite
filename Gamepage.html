@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ecb3f70053.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="script.js"></script>
+    <title>Games and Information</title>
+  </head>
+  <body id="Gamepage" onload="randomNumber()">
+    <!--TO CONTAIN BACKGROUND IMAGE-->
+    <div class="top-banner-container">
+      <!--NAVIGATION BAR-->
+      <header>
+        <div class="navbar" id="navbar">
+          <img src="logo.png" class="logo">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutPage.html">About</a></li>
+            <li><a href="contactPage.html">Contact</a></li>
+            <li><a href="GamesPage.html">Games</a></li>
+          </ul>
+        </div>
+      </header>
+      <!--INFORMATION PARAGRAPHS-->
+      <div class="left-and-right-container">
+        <!--LEFT SIDE PARAGRAPHS-->
+        <div class="top-left-container">
+          <h2>Games we play</h2>
+          <p>We play alot of games at 'Super Generic Name' eSports Society. If you want to see the popular games amongst us look at the Popular Games section</p>
+          <h2>eSports Teams</h2>
+          <p>We have a couple of eSports teams representing 'Super Generic Name' in games such as Valorant, CS:GO, League of Legends, etc.
+          </p>
+          <h2>Players</h2>
+          <p>As of right now our players don't want to be put on our page but come back in the future to find out who plays for us!</p>
+          <button type="button"><span></span>Learn more </button>
+        </div>
+        <!--RIGHT SIDE PARAGRAPHS-->
+        <div class="top-right-container">
+          <h2>Popular Games</h2>
+          <p>Popular games with 'Super Generic Name' are Valorant, League of Legends, Overwatch 2, God of War: Ragnarök</p>
+          <h2>Streaming Services</h2>
+          <p>We let our players and Content Creators stream on any platform they prefer but to catch streams on the official 'Super Generic Name' channel check out our twitch</p>
+          <h2>Tournaments</h2>
+          <p>As of right now we have no Tournaments but come back in the future to find out all the details about our upcoming Tournaments
+          </p>
+          <button type="button"><span></span>Learn more </button>
+        </div>
+      </div>
+    </div>
+    <!--DIV TO CONTAIN GAME AND INFORMATION BOX BESIDE-->
+    <div class="game-and-info">
+      <!--GAME-->
+      <div class="game-container">
+        <h1>GUESS THE NUMBER</h1>
+        <br>
+        <label for="number-guess">Enter your guess:</label>
+        <input type="number" id="number-guess" name="number-guess" placeholder="Guess from 1-10">
+        <br>
+        <input type="submit" id="btn" value="Guess" onclick="guess()">
+      </div>
+      <!--INFORMATION BOX-->
+      <div class="info-box">
+        <h1>Gaming Societies</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+        <p>sed do eiusmod tempor incididunt ut labore, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+      </div>
+    </div>
+    <!-- footer -->
+          <footer>
+            <div class="footer-content">
+              <h3>Contact</h3>
+              <p>Find us here!</p>
+              <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitch"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+              </ul>
+            </div>
+          </footer>
+
+  </body>
+</html>

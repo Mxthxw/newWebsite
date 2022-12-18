@@ -68,6 +68,7 @@
   font-weight: 100;
   line-height: 25px;
 }
+
 footer{
   background: #0C090A;
   height: auto;
@@ -147,92 +148,217 @@ button:hover span{
 button:hover{
   border: none;
 }
+
 .nav fa{
   display: none;
 }
 
+
 /*-- about us --*/
+ h1{
+   color: white;
+ }
+ .About{
+   position: inherit; width: 100%;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(aboutbackground.jpg);
+   background-size: cover;
+   background-position: center;
+ }
+ h2{
+   font-size: 36px;
+   font-weight: 600;
+   color: white;
+ }
+ p{
+   color: white;
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+ }
+ .row{
+   margin: 5%;
+   display: flex;
+   justify-content: space-between;
+ }
+ .about-col{
+   flex-basis: 31%;
+   background: #1d1316;
+   border-radius: 5px;
+   margin-bottom: 5%;
+   padding: 10px 12px;
+   box-sizing: border-box;
+ }
+ h3{
+   text-align: center;
+   font-weight: 600;
+   margin: 6px 0;
+   color: white;
+ }
+ .about-col:hover{
+   box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+ }
+ @media(max-width: 700px){
+   .row{
+     flex-direction: column;
+   }
+ }
 
-.About{
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(aboutbackground.jpg);
-  background-size: cover;
-  background-position: center;
-}
-h2{
-  font-size: 36px;
-  font-weight: 600;
+
+body{
+  /*GRADIENT TO MAKE THE GRADIENT APPEAR THE AT THE GAME SECTION*/
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
 }
-p{
-  color: #5C5858;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  padding: 10px;
+
+/*INFORMATION SECTION*/
+.top-banner-container{
+  background-image: url('compbackground.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-color: rgb(50, 48, 48);
+  background-blend-mode: multiply;
+  height: 700px;
 }
-.row{
-  margin: 5%;
+
+.left-and-right-container{
   display: flex;
-  justify-content: space-between;
-}
-.about-col{
-  flex-basis: 31%;
-  background: #D462FF;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-}
-h3{
-  text-align: center;
-  font-weight: 600;
-  margin: 10px 0;
-  color: white;
-}
-.about-col:hover{
-  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-@media(max-width: 700px){
-  .row{
-    flex-direction: column;
-  }
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
-/*-- Games --*/
-.Games{
-  width: 100%;
-  margin: auto;
+.top-right-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding-top: 100px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(gamebackground.jpg);
-  background-size: cover;
-  background-position: center;
+  width: 700px;
 }
-.games-col{
-  flex-basis: 32%;
-  background: #D462FF;
-  border-radius: 10px;
-  margin-bottom: 30px;
+
+.top-left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 700px;
+}
+
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #D462FF;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
   position: relative;
   overflow: hidden;
 }
-.games-col img{
-  width: 100%;
+span{
+  background:#D462FF;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
 }
-/*-- blackjack --*/
-.BlackJack{
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding-top: 100px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.75)), url(compbackground.jpg);
+button:hover span{
+  width: 100%
+}
+button:hover{
+  border: none;
+}
+
+.game-and-info{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-left: 50px;
+}
+
+/* INFORMATION BOX AT THE BOTTOM */
+.info-box{
+  background-image: url("peripherals.jpg");
   background-size: cover;
+  position: relative;
   background-position: center;
+  background-color: rgb(59, 55, 55);
+  background-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+  width: 500px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
-h4{
-  color: white;
+
+/*GAME SECTION*/
+.game-container{
+  background-image: url('background.jpg');
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-color: rgb(58, 58, 58);
+  background-blend-mode: multiply;
+  width: 700px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+  border-radius: 20px;
+}
+
+#number-guess{
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#btn{
+  border: none;
+  width: 140px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* HAVE AN EFFECT WHEN BUTTON IS CLICKED */
+#btn:active{
+  background-color: lightgray;
+}
+
+/*WIN SCREEN*/
+.win-contianer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 95vh;
 }
